@@ -67,3 +67,22 @@ footer { text-align: center; color: var(--suave); font-size: 0.9rem; padding: 24
 footer a { margin: 0 8px; }
 .documento h1 { font-size: 1.6rem; margin-top: 0; }
 .documento p, .documento li { overflow-wrap: anywhere; }
+.botao {
+  display: inline-block;
+  margin-top: 20px;
+  background: var(--azul);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 999px;
+  box-shadow: 0 2px 6px rgba(25, 118, 210, 0.35);
+}
+.botao:hover { background: var(--azul-escuro); }
+.heroi .versao { font-size: 0.9rem; margin-top: 10px; }
+.aviso-normal { border-left: 5px solid #d97706; background: #fffbeb; }
+.aviso-normal h2 { color: #92400e; }
+ol.passos { padding-left: 22px; margin: 0; }
+ol.passos li { margin: 0 0 14px; }
+ol.passos li .suave { display: block; font-size: 0.95rem; }
