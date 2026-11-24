@@ -3,82 +3,374 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FatuService</title>
-  <meta name="description" content="FatuService: aplicativo Android para gerenciar clientes, serviços, estoque e cobranças de pequenos prestadores de serviço.">
+  <title>FatuService – Gestão de clientes, serviços e cobranças no celular</title>
+  <meta name="description" content="Aplicativo Android para prestadores de serviço: clientes, agenda de serviços, estoque, faturamento e cobranças pelo WhatsApp com Pix. Teste grátis por 14 dias.">
+  <meta name="theme-color" content="#1565c0">
+  <meta property="og:title" content="FatuService – seu negócio de serviços organizado no celular">
+  <meta property="og:description" content="Clientes, agenda, estoque e cobranças pelo WhatsApp com Pix. 14 dias grátis.">
+  <meta property="og:image" content="https://robsonluissagaz.github.io/fatuservice/icone.png">
+  <meta property="og:type" content="website">
   <link rel="icon" href="icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <header>
-    <div class="barra">
-      <img src="icone.png" alt="">
-      <a class="marca" href="./">FatuService</a>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-clientes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-agenda" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="m9 16 2 2 4-4"/></symbol>
+      <symbol id="i-whats" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/></symbol>
+      <symbol id="i-estoque" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></symbol>
+      <symbol id="i-grafico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+      <symbol id="i-nuvem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14.9A7 7 0 1 1 15.7 8h1.8a4.5 4.5 0 0 1 2.5 8.2"/><path d="M12 12v9"/><path d="m16 16-4-4-4 4"/></symbol>
+      <symbol id="i-celular" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+      <symbol id="i-cadeado" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+      <symbol id="i-baixar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    </defs>
+  </svg>
+
+  <nav class="nav">
+    <div class="recipiente">
+      <a class="logo" href="./"><img src="icone.png" alt="">FatuService</a>
+      <div class="nav-links">
+        <a href="#recursos">Recursos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#planos">Planos</a>
+        <a href="#duvidas">Dúvidas</a>
+      </div>
+      <a class="botao pequeno" href="instalar.html">Baixar grátis</a>
+    </div>
+  </nav>
+
+  <header class="heroi">
+    <div class="recipiente">
+      <div class="texto">
+        <span class="selo-topo"><span class="ponto"></span>14 dias grátis · sem cartão de crédito</span>
+        <h1>Seu negócio de serviços <span class="destaque">organizado no celular</span></h1>
+        <p class="lead">Clientes, agenda de serviços, estoque, faturamento e cobranças pelo WhatsApp com a sua chave Pix. Tudo em um só app, simples de usar no dia a dia.</p>
+        <div class="acoes">
+          <a class="botao claro grande" href="instalar.html"><svg><use href="#i-baixar"/></svg>Começar teste grátis</a>
+          <a class="botao vazado grande" href="#planos">Ver planos</a>
+        </div>
+        <ul class="garantias">
+          <li><svg><use href="#i-check"/></svg>Para Android</li>
+          <li><svg><use href="#i-check"/></svg>Funciona sem internet</li>
+          <li><svg><use href="#i-check"/></svg>Backup no seu Google Drive</li>
+        </ul>
+      </div>
+      <div class="telefones" aria-hidden="true">
+        <div class="celular atras"><img src="img/tela-servicos.webp" alt="" loading="eager"></div>
+        <div class="celular frente"><img src="img/tela-inicio.webp" alt="Tela inicial do FatuService com o faturamento do mês" loading="eager"></div>
+      </div>
     </div>
   </header>
-  <main>
-    <section class="cartao heroi">
-      <img src="icone.png" alt="Ícone do FatuService">
-      <h1>FatuService</h1>
-      <p>Gestão de clientes, serviços, estoque e cobranças para prestadores de serviço, direto no celular Android.</p>
-      <span class="selo">14 dias grátis, sem cartão de crédito</span>
-      <div><a class="botao" href="instalar.html">Baixar para Android</a></div>
-    </section>
 
-    <section class="cartao">
-      <h2>O que o app faz</h2>
-      <ul class="recursos">
-        <li>Cadastro de clientes com telefone e endereço.</li>
-        <li>Ordens de serviço com data, horário, valor e serviços recorrentes.</li>
-        <li>Serviços ativos, finalizados e pagamentos pendentes.</li>
-        <li>Inventário de produtos com baixa automática do estoque nos serviços.</li>
-        <li>Cobrança e ordem de serviço em PDF enviadas pelo WhatsApp, com a sua chave Pix.</li>
-        <li>Faturamento do mês e por período.</li>
-        <li>Backup no seu próprio Google Drive.</li>
-      </ul>
-    </section>
+  <div class="faixa">
+    <div class="recipiente">
+      <span class="titulo">Ideal para quem atende clientes:</span>
+      <span class="etiqueta">Limpeza de piscinas</span>
+      <span class="etiqueta">Jardinagem</span>
+      <span class="etiqueta">Diaristas</span>
+      <span class="etiqueta">Ar-condicionado</span>
+      <span class="etiqueta">Elétrica e hidráulica</span>
+      <span class="etiqueta">Dedetização</span>
+      <span class="etiqueta">Assistência técnica</span>
+    </div>
+  </div>
 
-    <section class="cartao">
-      <h2>Planos</h2>
-      <p class="suave">Todos os planos têm as mesmas funções. Pagamento por Pix, boleto ou cartão.</p>
-      <div class="grade">
+  <section class="secao" id="recursos">
+    <div class="recipiente">
+      <div class="cabeca">
+        <span class="rotulo">Recursos</span>
+        <h2>Tudo o que você precisa, sem planilha e sem papel</h2>
+        <p>Feito para o prestador de serviço que quer parar de perder tempo com anotações e cobranças esquecidas.</p>
+      </div>
+      <div class="grade-recursos">
+        <div class="recurso">
+          <div class="icone i-azul"><svg><use href="#i-clientes"/></svg></div>
+          <h3>Cadastro de clientes</h3>
+          <p>Nome, telefone e endereço sempre à mão, com busca rápida mesmo com centenas de clientes.</p>
+        </div>
+        <div class="recurso">
+          <div class="icone i-roxo"><svg><use href="#i-agenda"/></svg></div>
+          <h3>Agenda de serviços</h3>
+          <p>Ordens de serviço com data, horário e valor. Serviços recorrentes são gerados sozinhos.</p>
+        </div>
+        <div class="recurso">
+          <div class="icone i-verde"><svg><use href="#i-whats"/></svg></div>
+          <h3>Cobrança pelo WhatsApp</h3>
+          <p>Envie a cobrança ou a ordem de serviço em PDF, já com a sua chave Pix, em poucos toques.</p>
+        </div>
+        <div class="recurso">
+          <div class="icone i-laranja"><svg><use href="#i-estoque"/></svg></div>
+          <h3>Controle de estoque</h3>
+          <p>Produtos usados nos serviços dão baixa automática. O app avisa quando o estoque está baixo.</p>
+        </div>
+        <div class="recurso">
+          <div class="icone i-teal"><svg><use href="#i-grafico"/></svg></div>
+          <h3>Faturamento</h3>
+          <p>Veja quanto entrou no mês, consulte qualquer período e acompanhe os pagamentos pendentes.</p>
+        </div>
+        <div class="recurso">
+          <div class="icone i-rosa"><svg><use href="#i-nuvem"/></svg></div>
+          <h3>Backup no Google Drive</h3>
+          <p>Seus dados ficam no celular e você faz cópia no seu próprio Drive. Trocou de aparelho? É só restaurar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao alt">
+    <div class="recipiente">
+      <div class="destaque-linha">
+        <div class="texto">
+          <span class="rotulo">Agenda</span>
+          <h2>Saiba exatamente onde você precisa estar hoje</h2>
+          <p>Os próximos serviços aparecem em ordem, com cliente, endereço, horário e valor. Nada de esquecer visita ou cliente.</p>
+          <ul class="lista-check">
+            <li><svg><use href="#i-check"/></svg>Serviços recorrentes semanais, quinzenais ou mensais</li>
+            <li><svg><use href="#i-check"/></svg>Situação de pagamento de cada serviço</li>
+            <li><svg><use href="#i-check"/></svg>Histórico completo dos serviços finalizados</li>
+          </ul>
+        </div>
+        <div class="figura">
+          <div class="celular"><img src="img/tela-servicos.webp" alt="Lista de serviços ativos" loading="lazy"></div>
+        </div>
+      </div>
+
+      <div class="destaque-linha inverte">
+        <div class="texto">
+          <span class="rotulo">Cobrança</span>
+          <h2>Receba sem constrangimento e sem esquecer ninguém</h2>
+          <p>Veja quem ainda não pagou e envie a cobrança pelo WhatsApp com o valor e a sua chave Pix. Marcou como pago, o faturamento já atualiza.</p>
+          <ul class="lista-check">
+            <li><svg><use href="#i-check"/></svg>Lista de pagamentos pendentes</li>
+            <li><svg><use href="#i-check"/></svg>Ordem de serviço em PDF com os dados da sua empresa</li>
+            <li><svg><use href="#i-check"/></svg>Faturamento do mês na tela inicial</li>
+          </ul>
+        </div>
+        <div class="figura">
+          <div class="celular"><img src="img/tela-cobranca.webp" alt="Tela de geração de cobrança" loading="lazy"></div>
+        </div>
+      </div>
+
+      <div class="destaque-linha">
+        <div class="texto">
+          <span class="rotulo">Estoque</span>
+          <h2>Nunca mais chegue no cliente sem produto</h2>
+          <p>Cadastre seus materiais com custo e preço. Ao lançar um serviço, os produtos usados saem do estoque automaticamente.</p>
+          <ul class="lista-check">
+            <li><svg><use href="#i-check"/></svg>Alerta de estoque baixo</li>
+            <li><svg><use href="#i-check"/></svg>Entradas, saídas e ajustes com histórico</li>
+            <li><svg><use href="#i-check"/></svg>Busca por nome, código ou categoria</li>
+          </ul>
+        </div>
+        <div class="figura">
+          <div class="celular"><img src="img/tela-estoque.webp" alt="Lista de itens do estoque" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="como-funciona">
+    <div class="recipiente">
+      <div class="cabeca">
+        <span class="rotulo">Como funciona</span>
+        <h2>Comece a usar em 2 minutos</h2>
+        <p>Sem cadastro complicado e sem cartão de crédito para testar.</p>
+      </div>
+      <div class="passos-grade">
+        <div class="passo">
+          <div class="numero">1</div>
+          <h3>Baixe o app</h3>
+          <p>Instale o FatuService no seu Android seguindo o <a href="instalar.html">passo a passo</a>.</p>
+        </div>
+        <div class="passo">
+          <div class="numero">2</div>
+          <h3>Cadastre sua empresa</h3>
+          <p>Nome, telefone e chave Pix. Depois é só entrar com a sua conta Google.</p>
+        </div>
+        <div class="passo">
+          <div class="numero">3</div>
+          <h3>Use grátis por 14 dias</h3>
+          <p>Todas as funções liberadas. Gostou? Escolha um plano e pague por Pix, boleto ou cartão.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao alt" aria-label="Telas do aplicativo">
+    <div class="cabeca recipiente">
+      <span class="rotulo">Por dentro do app</span>
+      <h2>Simples de usar, bonito de ver</h2>
+    </div>
+    <div class="galeria">
+      <figure><div class="celular"><img src="img/tela-inicio.webp" alt="Tela inicial" loading="lazy"></div><figcaption>Tela inicial</figcaption></figure>
+      <figure><div class="celular"><img src="img/tela-servicos.webp" alt="Serviços ativos" loading="lazy"></div><figcaption>Serviços ativos</figcaption></figure>
+      <figure><div class="celular"><img src="img/tela-detalhes.webp" alt="Detalhes do serviço" loading="lazy"></div><figcaption>Detalhes do serviço</figcaption></figure>
+      <figure><div class="celular"><img src="img/tela-pendentes.webp" alt="Pagamentos pendentes" loading="lazy"></div><figcaption>Pagamentos pendentes</figcaption></figure>
+      <figure><div class="celular"><img src="img/tela-estoque.webp" alt="Estoque" loading="lazy"></div><figcaption>Estoque</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="secao" id="planos">
+    <div class="recipiente">
+      <div class="cabeca">
+        <span class="rotulo">Planos</span>
+        <h2>Menos que um cafezinho por dia</h2>
+        <p>Comece com 14 dias grátis. Todos os planos têm todas as funções. Quanto maior o período, maior a economia.</p>
+      </div>
+      <div class="grade-planos">
         <div class="plano">
           <div class="nome">Mensal</div>
-          <div class="preco">R$ 25,00<span class="suave" style="font-size:.9rem">/mês</span></div>
-          <div class="detalhe">Cobrado R$ 25,00 todo mês</div>
+          <div class="preco"><span class="rs">R$</span><span class="valor">25</span><span class="mes">/mês</span></div>
+          <div class="detalhe">Cobrado todo mês</div>
+          <span class="economia vazia">-</span>
+          <div class="espaco"></div>
+          <a class="botao" href="instalar.html">Testar grátis</a>
         </div>
         <div class="plano">
           <div class="nome">Trimestral</div>
-          <div class="preco">R$ 23,00<span class="suave" style="font-size:.9rem">/mês</span></div>
+          <div class="preco"><span class="rs">R$</span><span class="valor">23</span><span class="mes">/mês</span></div>
           <div class="detalhe">R$ 69,00 a cada 3 meses</div>
-          <div class="economia">Economize 8%</div>
+          <span class="economia">Economize 8%</span>
+          <div class="espaco"></div>
+          <a class="botao" href="instalar.html">Testar grátis</a>
         </div>
         <div class="plano">
           <div class="nome">Semestral</div>
-          <div class="preco">R$ 21,00<span class="suave" style="font-size:.9rem">/mês</span></div>
+          <div class="preco"><span class="rs">R$</span><span class="valor">21</span><span class="mes">/mês</span></div>
           <div class="detalhe">R$ 126,00 a cada 6 meses</div>
-          <div class="economia">Economize 16%</div>
+          <span class="economia">Economize 16%</span>
+          <div class="espaco"></div>
+          <a class="botao" href="instalar.html">Testar grátis</a>
         </div>
-        <div class="plano">
+        <div class="plano popular">
+          <span class="fita">MAIS ECONÔMICO</span>
           <div class="nome">Anual</div>
-          <div class="preco">R$ 19,00<span class="suave" style="font-size:.9rem">/mês</span></div>
+          <div class="preco"><span class="rs">R$</span><span class="valor">19</span><span class="mes">/mês</span></div>
           <div class="detalhe">R$ 228,00 por ano</div>
-          <div class="economia">Economize 24%</div>
+          <span class="economia">Economize 24%</span>
+          <div class="espaco"></div>
+          <a class="botao" href="instalar.html">Testar grátis</a>
         </div>
       </div>
-      <p class="suave">Depois do teste, sem assinatura o app continua abrindo para consulta e backup dos seus dados.</p>
-    </section>
+      <div class="incluso">
+        <h3>Todos os planos incluem</h3>
+        <ul>
+          <li><svg><use href="#i-check"/></svg>Clientes e serviços ilimitados</li>
+          <li><svg><use href="#i-check"/></svg>Serviços recorrentes automáticos</li>
+          <li><svg><use href="#i-check"/></svg>Cobrança e PDF pelo WhatsApp com Pix</li>
+          <li><svg><use href="#i-check"/></svg>Controle de estoque</li>
+          <li><svg><use href="#i-check"/></svg>Faturamento por período</li>
+          <li><svg><use href="#i-check"/></svg>Backup no seu Google Drive</li>
+        </ul>
+      </div>
+      <p class="nota-planos">Pagamento por Pix, boleto ou cartão. Cancele quando quiser, direto pelo app. Sem assinatura, o app continua abrindo para consulta e backup dos seus dados.</p>
+    </div>
+  </section>
 
-    <section class="cartao">
-      <h2>Contato e suporte</h2>
-      <p>Para instalar, veja o <a href="instalar.html">passo a passo de instalação</a>. Dúvidas ou suporte: <a href="mailto:robsonluissagaz@gmail.com">robsonluissagaz@gmail.com</a></p>
-      <p class="suave">Desenvolvido por Robson Luis Sagaz.</p>
-    </section>
-  </main>
-  <footer>
-    <a href="instalar.html">Instalar</a>
-    <a href="privacidade.html">Política de privacidade</a>
-    <a href="termos.html">Termos de uso</a>
-    <div>© 2026 FatuService</div>
+  <section class="secao alt">
+    <div class="recipiente">
+      <div class="cabeca">
+        <span class="rotulo">Seus dados</span>
+        <h2>Seus dados continuam sendo seus</h2>
+        <p>Privacidade de verdade, explicada sem letras miúdas na nossa <a href="privacidade.html">política de privacidade</a>.</p>
+      </div>
+      <div class="privacidade-bloco">
+        <div class="item">
+          <div class="icone i-azul"><svg><use href="#i-celular"/></svg></div>
+          <div><h3>Ficam no seu celular</h3><p>Clientes, serviços e valores são guardados no aparelho, não em servidores nossos.</p></div>
+        </div>
+        <div class="item">
+          <div class="icone i-verde"><svg><use href="#i-nuvem"/></svg></div>
+          <div><h3>Backup no seu Drive</h3><p>A cópia vai para o seu Google Drive. O app só enxerga os arquivos que ele mesmo cria.</p></div>
+        </div>
+        <div class="item">
+          <div class="icone i-roxo"><svg><use href="#i-cadeado"/></svg></div>
+          <div><h3>Nada fica preso</h3><p>Mesmo sem assinatura você consulta tudo e faz backup. Seus dados nunca são apagados.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="duvidas">
+    <div class="recipiente">
+      <div class="cabeca">
+        <span class="rotulo">Dúvidas</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+      <div class="perguntas">
+        <details>
+          <summary>Preciso de cartão de crédito para testar?</summary>
+          <p>Não. Os 14 dias de teste são liberados assim que você entra com a sua conta Google, sem pedir nenhum dado de pagamento. O teste não vira cobrança automaticamente.</p>
+        </details>
+        <details>
+          <summary>Funciona sem internet?</summary>
+          <p>Sim. O dia a dia funciona offline. A internet só é usada para fazer backup, enviar mensagens pelo WhatsApp e confirmar a assinatura (o app aceita ficar até 7 dias sem conexão).</p>
+        </details>
+        <details>
+          <summary>Por que o celular mostra um aviso ao instalar?</summary>
+          <p>O FatuService ainda não está na Play Store, então o Android avisa que o app vem de fora da loja. É normal. No <a href="instalar.html">passo a passo de instalação</a> mostramos exatamente onde tocar.</p>
+        </details>
+        <details>
+          <summary>O que acontece se eu não assinar depois do teste?</summary>
+          <p>O app entra em modo consulta: você continua vendo todos os seus dados e pode fazer backup, mas não cadastra nem altera nada até assinar. Nenhum dado é apagado.</p>
+        </details>
+        <details>
+          <summary>Posso cancelar quando quiser?</summary>
+          <p>Pode. O cancelamento é feito pela tela Assinatura do próprio app. Você continua com acesso completo até o fim do período já pago. Nos primeiros 7 dias após o pagamento, você pode pedir o reembolso integral.</p>
+        </details>
+        <details>
+          <summary>Troquei de celular. Perco meus dados?</summary>
+          <p>Não, se tiver feito backup. Instale o app no celular novo, entre com a mesma conta Google e restaure o backup do seu Drive.</p>
+        </details>
+        <details>
+          <summary>Funciona no iPhone?</summary>
+          <p>Por enquanto, apenas em celulares Android 7 ou mais novos.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="chamada">
+    <div class="recipiente">
+      <div class="caixa">
+        <h2>Pronto para organizar seu negócio?</h2>
+        <p>Teste todas as funções por 14 dias, sem compromisso e sem cartão de crédito.</p>
+        <a class="botao claro grande" href="instalar.html"><svg><use href="#i-baixar"/></svg>Baixar o FatuService</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="recipiente">
+      <div class="colunas">
+        <div>
+          <a class="logo" href="./"><img src="icone.png" alt="">FatuService</a>
+          <p>Gestão de clientes, serviços, estoque e cobranças para prestadores de serviço, direto no celular.</p>
+        </div>
+        <div>
+          <h4>Aplicativo</h4>
+          <a href="instalar.html">Baixar e instalar</a>
+          <a href="#recursos">Recursos</a>
+          <a href="#planos">Planos</a>
+        </div>
+        <div>
+          <h4>Suporte</h4>
+          <a href="mailto:robsonluissagaz@gmail.com">robsonluissagaz@gmail.com</a>
+          <a href="privacidade.html">Política de privacidade</a>
+          <a href="termos.html">Termos de uso</a>
+        </div>
+      </div>
+      <div class="base">
+        <span>© 2026 FatuService. Todos os direitos reservados.</span>
+        <span>Desenvolvido por Robson Luis Sagaz</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

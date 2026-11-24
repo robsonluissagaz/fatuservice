@@ -5,73 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Instalar o FatuService</title>
   <meta name="description" content="Baixe e instale o FatuService no seu celular Android, passo a passo.">
+  <meta name="theme-color" content="#1565c0">
   <link rel="icon" href="icone.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <header>
-    <div class="barra">
-      <img src="icone.png" alt="">
-      <a class="marca" href="./">FatuService</a>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-baixar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+      <symbol id="i-alerta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    </defs>
+  </svg>
+
+  <nav class="nav">
+    <div class="recipiente">
+      <a class="logo" href="./"><img src="icone.png" alt="">FatuService</a>
+      <div class="nav-links">
+        <a href="./#recursos">Recursos</a>
+        <a href="./#planos">Planos</a>
+        <a href="./#duvidas">Dúvidas</a>
+      </div>
+      <a class="botao pequeno" href="https://github.com/robsonluissagaz/fatuservice/releases/latest/download/FatuService.apk">Baixar</a>
+    </div>
+  </nav>
+
+  <header class="topo-pagina">
+    <div class="recipiente">
+      <h1>Instale o FatuService</h1>
+      <p>Leva menos de 2 minutos. Depois é só entrar com sua conta Google e usar grátis por 14 dias.</p>
+      <a class="botao claro grande" href="https://github.com/robsonluissagaz/fatuservice/releases/latest/download/FatuService.apk"><svg><use href="#i-baixar"/></svg>Baixar o aplicativo</a>
+      <div class="versao">Para celulares Android 7 ou mais novos</div>
     </div>
   </header>
-  <main>
-    <section class="cartao heroi">
-      <img src="icone.png" alt="Ícone do FatuService">
-      <h1>Instalar o FatuService</h1>
-      <p>Aplicativo para celulares Android. Leva menos de 2 minutos.</p>
-      <a class="botao" href="https://github.com/robsonluissagaz/fatuservice/releases/latest/download/FatuService.apk">Baixar o aplicativo</a>
-      <p class="suave versao" id="versao">Para Android 7 ou mais novo</p>
-    </section>
 
-    <section class="cartao aviso-normal">
-      <h2>O celular vai mostrar um aviso. É normal.</h2>
-      <p>O FatuService ainda não está na Play Store, então o Android avisa que o app vem "de fora da loja". Ele não lê suas fotos, contatos nem mensagens: guarda seus dados no próprio celular e, se você quiser, faz backup só na pasta dele no seu Google Drive.</p>
-    </section>
+  <main class="recipiente conteudo-pagina">
+    <div class="estreito">
+      <section class="cartao aviso-normal">
+        <div class="icone"><svg><use href="#i-alerta"/></svg></div>
+        <div>
+          <h2>O celular vai mostrar um aviso. É normal.</h2>
+          <p>O FatuService ainda não está na Play Store, então o Android avisa que o app vem "de fora da loja". Ele não lê suas fotos, contatos nem mensagens: guarda seus dados no próprio celular e, se você quiser, faz backup só na pasta dele no seu Google Drive.</p>
+        </div>
+      </section>
 
-    <section class="cartao">
-      <h2>Passo a passo</h2>
-      <ol class="passos">
-        <li>
-          <strong>Toque em "Baixar o aplicativo"</strong> acima.
-          <span class="suave">Se o navegador perguntar se quer mesmo baixar o arquivo, toque em <b>Baixar mesmo assim</b>.</span>
-        </li>
-        <li>
-          <strong>Abra o arquivo baixado</strong> (FatuService.apk), pela notificação do download ou pela pasta Downloads.
-        </li>
-        <li>
-          <strong>Permita a instalação.</strong> Se aparecer <i>"Por segurança, seu telefone não pode instalar apps desta fonte"</i>, toque em <b>Configurações</b>, ative <b>Permitir desta fonte</b> e volte.
-        </li>
-        <li>
-          <strong>Toque em Instalar.</strong>
-        </li>
-        <li>
-          <strong>Se aparecer o aviso do Play Protect</strong> (<i>"App não seguro bloqueado"</i> ou <i>"Desenvolvedor desconhecido"</i>), toque em <b>Mais detalhes</b> e depois em <b>Instalar mesmo assim</b>.
-          <span class="suave">Se ele oferecer enviar o app para análise, pode aceitar.</span>
-        </li>
-        <li>
-          <strong>Abra o FatuService</strong>, cadastre sua empresa e entre com sua conta Google. Os <b>14 dias grátis</b> começam na hora.
-        </li>
-      </ol>
-    </section>
+      <section class="cartao">
+        <h2>Passo a passo</h2>
+        <div class="instalar-grade">
+          <ol class="passos">
+            <li>
+              <strong>Toque em "Baixar o aplicativo"</strong>
+              <span class="suave">Se o navegador perguntar se quer mesmo baixar o arquivo, toque em <b>Baixar mesmo assim</b>.</span>
+            </li>
+            <li>
+              <strong>Abra o arquivo baixado</strong>
+              <span class="suave">Toque na notificação do download ou abra o FatuService.apk na pasta Downloads.</span>
+            </li>
+            <li>
+              <strong>Permita a instalação</strong>
+              <span class="suave">Se aparecer <i>"Por segurança, seu telefone não pode instalar apps desta fonte"</i>, toque em <b>Configurações</b>, ative <b>Permitir desta fonte</b> e volte.</span>
+            </li>
+            <li>
+              <strong>Toque em Instalar</strong>
+              <span class="suave">Se aparecer o aviso do Play Protect (<i>"App não seguro bloqueado"</i> ou <i>"Desenvolvedor desconhecido"</i>), toque em <b>Mais detalhes</b> e depois em <b>Instalar mesmo assim</b>. Se ele oferecer enviar o app para análise, pode aceitar.</span>
+            </li>
+            <li>
+              <strong>Abra e comece a usar</strong>
+              <span class="suave">Cadastre sua empresa e entre com sua conta Google. Os <b>14 dias grátis</b> começam na hora, sem cartão de crédito.</span>
+            </li>
+          </ol>
+          <div class="celular"><img src="img/tela-inicio.webp" alt="Tela inicial do FatuService" loading="lazy"></div>
+        </div>
+      </section>
 
-    <section class="cartao">
-      <h2>Dúvidas</h2>
-      <h3>Já tenho o app. Como atualizo?</h3>
-      <p>Faça um backup pelo app, baixe o arquivo de novo por esta página e instale <b>por cima</b>, sem desinstalar. Seus dados continuam lá.</p>
-      <h3>O app é seguro?</h3>
-      <p>Sim. Todo APK é assinado sempre com a mesma chave do FatuService, e o Android só aceita atualizações com essa assinatura. Veja a <a href="privacidade.html">política de privacidade</a> para saber exatamente quais dados são usados.</p>
-      <h3>Funciona no iPhone?</h3>
-      <p>Ainda não. Por enquanto só Android.</p>
-      <h3>Precisa de ajuda?</h3>
-      <p>Escreva para <a href="mailto:robsonluissagaz@gmail.com">robsonluissagaz@gmail.com</a>.</p>
-    </section>
+      <section class="cartao duvidas">
+        <h2>Dúvidas</h2>
+        <h3>Já tenho o app. Como atualizo?</h3>
+        <p>Faça um backup pelo app, baixe o arquivo de novo por esta página e instale <b>por cima</b>, sem desinstalar. Seus dados continuam lá.</p>
+        <h3>O app é seguro?</h3>
+        <p>Sim. Todo APK é assinado sempre com a mesma chave do FatuService, e o Android só aceita atualizações com essa assinatura. Veja a <a href="privacidade.html">política de privacidade</a> para saber exatamente quais dados são usados.</p>
+        <h3>Funciona no iPhone?</h3>
+        <p>Ainda não. Por enquanto só Android.</p>
+        <h3>Precisa de ajuda?</h3>
+        <p>Escreva para <a href="mailto:robsonluissagaz@gmail.com">robsonluissagaz@gmail.com</a>.</p>
+      </section>
+    </div>
   </main>
-  <footer>
-    <a href="./">Início</a>
-    <a href="privacidade.html">Política de privacidade</a>
-    <a href="termos.html">Termos de uso</a>
-    <div>© 2026 FatuService</div>
+
+  <footer class="rodape">
+    <div class="recipiente">
+      <div class="colunas">
+        <div>
+          <a class="logo" href="./"><img src="icone.png" alt="">FatuService</a>
+          <p>Gestão de clientes, serviços, estoque e cobranças para prestadores de serviço, direto no celular.</p>
+        </div>
+        <div>
+          <h4>Aplicativo</h4>
+          <a href="instalar.html">Baixar e instalar</a>
+          <a href="./#recursos">Recursos</a>
+          <a href="./#planos">Planos</a>
+        </div>
+        <div>
+          <h4>Suporte</h4>
+          <a href="mailto:robsonluissagaz@gmail.com">robsonluissagaz@gmail.com</a>
+          <a href="privacidade.html">Política de privacidade</a>
+          <a href="termos.html">Termos de uso</a>
+        </div>
+      </div>
+      <div class="base">
+        <span>© 2026 FatuService. Todos os direitos reservados.</span>
+        <span>Desenvolvido por Robson Luis Sagaz</span>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
