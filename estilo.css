@@ -211,6 +211,23 @@ h1, h2, h3 { font-family: var(--fonte-titulo); color: var(--tinta); line-height:
 .incluso svg { width: 18px; height: 18px; color: var(--verde); flex: none; margin-top: 4px; }
 .nota-planos { text-align: center; color: var(--suave); font-size: .92rem; margin-top: 18px; }
 
+/* Planos: Essencial / + Análises */
+[hidden] { display: none !important; }
+.abas-planos { display: flex; gap: 6px; justify-content: center; margin: 0 auto 14px; background: #eef2f7; padding: 6px; border-radius: 999px; width: fit-content; }
+.abas-planos .aba { border: 0; background: transparent; font: inherit; font-weight: 700; color: var(--suave); padding: 10px 22px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; }
+.abas-planos .aba.ativa { background: var(--azul); color: #fff; box-shadow: 0 6px 16px rgba(25, 118, 210, .25); }
+.descricao-nivel { text-align: center; color: var(--suave); max-width: 620px; margin: 0 auto 30px; }
+.selo-novo { display: inline-block; background: #16a34a; color: #fff; font-size: .68rem; font-weight: 800; letter-spacing: .05em; padding: 2px 8px; border-radius: 999px; vertical-align: middle; }
+.abas-planos .aba:not(.ativa) .selo-novo { background: #16a34a; }
+.destaque-linha .texto .botao { margin-top: 18px; }
+.destaque-linha .figura.dupla { gap: 18px; align-items: flex-start; }
+.destaque-linha .figura.dupla .celular { width: 230px; }
+.destaque-linha .figura.dupla .celular + .celular { margin-top: 60px; }
+@media (max-width: 560px) {
+  .destaque-linha .figura.dupla .celular { width: 46%; }
+  .destaque-linha .figura.dupla .celular + .celular { margin-top: 36px; }
+}
+
 /* Privacidade */
 .privacidade-bloco { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 @media (max-width: 800px) { .privacidade-bloco { grid-template-columns: 1fr; } }

@@ -172,6 +172,25 @@
           <div class="celular"><img src="img/tela-estoque.webp" alt="Lista de itens do estoque" loading="lazy"></div>
         </div>
       </div>
+
+      <div class="destaque-linha inverte" id="analises">
+        <div class="texto">
+          <span class="rotulo">Análises <span class="selo-novo">NOVO</span></span>
+          <h2>Veja para onde o seu negócio está indo</h2>
+          <p>Um painel completo com os números que importam, calculado no seu celular: seus dados não saem dele.</p>
+          <ul class="lista-check">
+            <li><svg><use href="#i-check"/></svg>Faturamento mês a mês, recebido e a receber</li>
+            <li><svg><use href="#i-check"/></svg>Maiores clientes e quem está devendo, com cobrança pelo WhatsApp</li>
+            <li><svg><use href="#i-check"/></svg>Serviços mais feitos e itens que mais dão lucro</li>
+            <li><svg><use href="#i-check"/></svg>Relatório em PDF para guardar ou mandar ao contador</li>
+          </ul>
+          <a class="botao" href="#planos" data-abrir-nivel="analises">Ver planos com Análises</a>
+        </div>
+        <div class="figura dupla">
+          <div class="celular"><img src="img/tela-analises.webp" alt="Painel de Análises com faturamento e gráfico" loading="lazy"></div>
+          <div class="celular"><img src="img/tela-analises-ranking.webp" alt="Ranking de maiores clientes e devedores" loading="lazy"></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -221,9 +240,15 @@
       <div class="cabeca">
         <span class="rotulo">Planos</span>
         <h2>Menos que um cafezinho por dia</h2>
-        <p>Comece com 14 dias grátis. Todos os planos têm todas as funções. Quanto maior o período, maior a economia.</p>
+        <p>Comece com 14 dias grátis, com tudo liberado, inclusive as Análises. Depois escolha o nível e o período: quanto maior o período, maior a economia.</p>
       </div>
-      <div class="grade-planos">
+      <div class="abas-planos" role="tablist" aria-label="Nível do plano">
+        <button type="button" class="aba ativa" data-nivel="essencial" role="tab" aria-selected="true">Essencial</button>
+        <button type="button" class="aba" data-nivel="analises" role="tab" aria-selected="false">+ Análises <span class="selo-novo">NOVO</span></button>
+      </div>
+      <p class="descricao-nivel" data-nivel="essencial">Tudo para organizar, agendar e cobrar seus clientes. O painel de Análises fica no nível + Análises.</p>
+      <p class="descricao-nivel" data-nivel="analises" hidden>Tudo do Essencial <b>+ o painel de Análises</b>: faturamento mês a mês, maiores clientes, quem está devendo, serviços e itens que mais dão lucro e relatório em PDF.</p>
+      <div class="grade-planos" data-nivel="essencial">
         <div class="plano">
           <div class="nome">Mensal</div>
           <div class="preco"><span class="rs">R$</span><span class="valor">25</span><span class="mes">/mês</span></div>
@@ -258,15 +283,52 @@
           <a class="botao" href="instalar.html">Testar grátis</a>
         </div>
       </div>
+      <div class="grade-planos" data-nivel="analises" hidden>
+        <div class="plano">
+          <div class="nome">Mensal + Análises</div>
+          <div class="preco"><span class="rs">R$</span><span class="valor">35</span><span class="mes">/mês</span></div>
+          <div class="detalhe">Cobrado todo mês</div>
+          <span class="economia vazia">-</span>
+          <div class="espaco"></div>
+          <a class="botao" href="instalar.html">Testar grátis</a>
+        </div>
+        <div class="plano">
+          <div class="nome">Trimestral + Análises</div>
+          <div class="preco"><span class="rs">R$</span><span class="valor">32</span><span class="mes">/mês</span></div>
+          <div class="detalhe">R$ 96,00 a cada 3 meses</div>
+          <span class="economia">Economize 9%</span>
+          <div class="espaco"></div>
+          <a class="botao" href="instalar.html">Testar grátis</a>
+        </div>
+        <div class="plano">
+          <div class="nome">Semestral + Análises</div>
+          <div class="preco"><span class="rs">R$</span><span class="valor">29</span><span class="mes">/mês</span></div>
+          <div class="detalhe">R$ 174,00 a cada 6 meses</div>
+          <span class="economia">Economize 17%</span>
+          <div class="espaco"></div>
+          <a class="botao" href="instalar.html">Testar grátis</a>
+        </div>
+        <div class="plano popular">
+          <span class="fita">MAIS ECONÔMICO</span>
+          <div class="nome">Anual + Análises</div>
+          <div class="preco"><span class="rs">R$</span><span class="valor">27</span><span class="mes">/mês</span></div>
+          <div class="detalhe">R$ 324,00 por ano</div>
+          <span class="economia">Economize 23%</span>
+          <div class="espaco"></div>
+          <a class="botao" href="instalar.html">Testar grátis</a>
+        </div>
+      </div>
       <div class="incluso">
         <h3>Todos os planos incluem</h3>
         <ul>
           <li><svg><use href="#i-check"/></svg>Clientes e serviços ilimitados</li>
           <li><svg><use href="#i-check"/></svg>Serviços recorrentes automáticos</li>
           <li><svg><use href="#i-check"/></svg>Cobrança e PDF pelo WhatsApp com Pix</li>
-          <li><svg><use href="#i-check"/></svg>Controle de estoque</li>
+          <li><svg><use href="#i-check"/></svg>Orçamentos em PDF que viram serviço</li>
+          <li><svg><use href="#i-check"/></svg>Controle de estoque com foto dos itens</li>
+          <li><svg><use href="#i-check"/></svg>Avisos antes e depois de cada serviço</li>
           <li><svg><use href="#i-check"/></svg>Faturamento por período</li>
-          <li><svg><use href="#i-check"/></svg>Backup no seu Google Drive</li>
+          <li><svg><use href="#i-check"/></svg>Backup automático no seu Google Drive</li>
         </ul>
       </div>
       <p class="nota-planos">Pagamento por Pix, boleto ou cartão. Cancele quando quiser, direto pelo app. Sem assinatura, o app continua abrindo para consulta e backup dos seus dados.</p>
@@ -372,5 +434,27 @@
       </div>
     </div>
   </footer>
+  <script>
+    // Planos: alterna entre Essencial e + Análises.
+    (function () {
+      function mostrar(nivel) {
+        document.querySelectorAll("#planos [data-nivel]").forEach(function (el) {
+          if (el.classList.contains("aba")) {
+            var ativa = el.dataset.nivel === nivel;
+            el.classList.toggle("ativa", ativa);
+            el.setAttribute("aria-selected", ativa ? "true" : "false");
+          } else {
+            el.hidden = el.dataset.nivel !== nivel;
+          }
+        });
+      }
+      document.querySelectorAll("#planos .aba").forEach(function (aba) {
+        aba.addEventListener("click", function () { mostrar(aba.dataset.nivel); });
+      });
+      document.querySelectorAll("[data-abrir-nivel]").forEach(function (link) {
+        link.addEventListener("click", function () { mostrar(link.dataset.abrirNivel); });
+      });
+    })();
+  </script>
 </body>
 </html>
