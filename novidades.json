@@ -1,9 +1,11 @@
 {
   "versoes": [
     {
-      "versao": "0.15.1",
+      "versao": "0.16.0",
       "data": "25/11/2026",
       "itens": [
+        "App muito mais rápido: abre em poucos segundos e troca de tela quase na hora.",
+        "Painel de Análises mais leve: os números aparecem na hora, sem travar.",
         "A janela de atualização agora mostra todas as novidades desde a sua versão.",
         "Nova opção Novidades do app na tela Ajuda e suporte."
       ]
