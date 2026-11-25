@@ -1,6 +1,14 @@
 {
   "versoes": [
     {
+      "versao": "0.15.1",
+      "data": "25/11/2026",
+      "itens": [
+        "A janela de atualização agora mostra todas as novidades desde a sua versão.",
+        "Nova opção Novidades do app na tela Ajuda e suporte."
+      ]
+    },
+    {
       "versao": "0.15.0",
       "data": "25/11/2026",
       "itens": [
