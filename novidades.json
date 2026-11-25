@@ -1,0 +1,77 @@
+{
+  "versoes": [
+    {
+      "versao": "0.15.0",
+      "data": "25/11/2026",
+      "itens": [
+        "Painel de Análises do negócio: faturamento mês a mês, recebido e a receber, com comparação ao período anterior.",
+        "Ranking dos maiores clientes e de quem está devendo, com botão para cobrar no WhatsApp.",
+        "Serviços mais feitos, itens do estoque mais usados e o lucro de cada um.",
+        "Relatório em PDF para guardar ou mandar ao contador.",
+        "Novos planos + Análises. No teste grátis, as Análises vêm liberadas."
+      ]
+    },
+    {
+      "versao": "0.14.0",
+      "data": "25/11/2026",
+      "itens": [
+        "Orçamentos: monte com produtos do estoque e itens livres, desconto, validade e condições.",
+        "Envie o orçamento em PDF pelo WhatsApp, com quadro de aceite do cliente.",
+        "Orçamento aprovado vira serviço com um toque, já agendado."
+      ]
+    },
+    {
+      "versao": "0.13.0",
+      "data": "25/11/2026",
+      "itens": [
+        "Backup automático diário no Google Drive (dá para desligar na tela Backup).",
+        "Aviso na tela inicial quando os dados estão sem backup recente."
+      ]
+    },
+    {
+      "versao": "0.12.0",
+      "data": "24/11/2026",
+      "itens": [
+        "Foto nos itens do inventário, pela câmera ou pela galeria."
+      ]
+    },
+    {
+      "versao": "0.11.4",
+      "data": "24/11/2026",
+      "itens": [
+        "Escolha da unidade de medida numa janela com todas as opções à vista (metro, rolo, galão...)."
+      ]
+    },
+    {
+      "versao": "0.11.3",
+      "data": "24/11/2026",
+      "itens": [
+        "Agora dá para colar um telefone copiado nos campos de cadastro.",
+        "Envio da nota em PDF pelo WhatsApp Business."
+      ]
+    },
+    {
+      "versao": "0.11.2",
+      "data": "24/11/2026",
+      "itens": [
+        "Notificações: aviso antes de cada serviço, quando ele é finalizado e a agenda do dia.",
+        "Nova tela de Ajuda e suporte, com atendimento pelo WhatsApp.",
+        "Aviso dentro do app quando sai uma versão nova."
+      ]
+    },
+    {
+      "versao": "0.11.0",
+      "data": "24/11/2026",
+      "itens": [
+        "Instalação e atualização pelo site oficial, com a assinatura definitiva do app."
+      ]
+    },
+    {
+      "versao": "0.10.0",
+      "data": "23/11/2026",
+      "itens": [
+        "Assinatura com 14 dias de teste grátis e planos mensal, trimestral, semestral e anual."
+      ]
+    }
+  ]
+}
