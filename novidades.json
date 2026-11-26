@@ -1,6 +1,16 @@
 {
   "versoes": [
     {
+      "versao": "0.18.1",
+      "data": "26/11/2026",
+      "itens": [
+        "Quando o dono muda as permissões de alguém (por exemplo, de administrador para funcionário), a mudança vale na hora no servidor: o app dessa pessoa avisa, fecha e abre de novo já com as permissões novas.",
+        "Quem trabalha sem internet continua podendo usar o app normalmente. Ao conectar, vale o que as permissões do momento permitem.",
+        "Mais proteção para o dono: o servidor não aceita que um administrador exclua a empresa.",
+        "Os celulares da equipe passam a conferir as mudanças com mais frequência."
+      ]
+    },
+    {
       "versao": "0.18.0",
       "data": "25/11/2026",
       "itens": [
