@@ -1,6 +1,16 @@
 {
   "versoes": [
     {
+      "versao": "0.18.0",
+      "data": "25/11/2026",
+      "itens": [
+        "Empresa compartilhada: convide pelo e-mail quem ajuda você (sócio, alguém da família) para usar a empresa no celular dele, com os mesmos clientes e serviços.",
+        "Você escolhe o que cada pessoa pode ver e alterar: clientes, serviços, orçamentos, estoque, pagamentos, análises e dados da empresa.",
+        "Acesso de Funcionário: vê só os serviços ativos (cliente, endereço, data e o que fazer), sem valores nem pagamentos.",
+        "Quem você convida não paga nada: usa a sua assinatura. Toque em Administradores, na tela inicial."
+      ]
+    },
+    {
       "versao": "0.16.1",
       "data": "25/11/2026",
       "itens": [
