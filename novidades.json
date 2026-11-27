@@ -1,6 +1,17 @@
 {
   "versoes": [
     {
+      "versao": "0.19.0",
+      "data": "27/11/2026",
+      "itens": [
+        "FatuService no computador: abra robsonluissagaz.github.io/fatuservice/app no navegador e entre com a mesma conta Google. Clientes, serviços, orçamentos, estoque, cobranças, análises e PDFs numa tela grande, sempre iguais ao celular.",
+        "Quem trabalha sozinho ativa o acesso pelo computador em Aparelhos conectados (no menu Mais da tela inicial).",
+        "Nova tela Aparelhos conectados: veja o celular e o navegador ligados à sua conta e desconecte o que quiser, por exemplo se perder o celular.",
+        "Ao entrar num celular novo, o app pergunta antes de desconectar o outro.",
+        "Celular desconectado agora pede para entrar de novo com a mesma conta, sem oferecer o teste grátis."
+      ]
+    },
+    {
       "versao": "0.18.1",
       "data": "26/11/2026",
       "itens": [
