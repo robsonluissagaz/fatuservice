@@ -1,6 +1,16 @@
 {
   "versoes": [
     {
+      "versao": "0.20.0",
+      "data": "27/11/2026",
+      "itens": [
+        "QR Code Pix na nota em PDF: o cliente aponta a câmera do app do banco e o valor já vem preenchido. A nota também traz o código Pix Copia e Cola.",
+        "Cobrar pessoalmente: no detalhe do serviço não pago, toque em \"QR Code Pix (cobrar agora)\" e mostre a tela para o cliente pagar na hora. Em Gerar cobrança, o botão \"QR Code\" mostra o total que o cliente deve.",
+        "As mensagens de cobrança pelo WhatsApp agora levam o Pix Copia e Cola, para o cliente pagar só copiando e colando.",
+        "Também na versão web (computador)."
+      ]
+    },
+    {
       "versao": "0.19.0",
       "data": "27/11/2026",
       "itens": [
